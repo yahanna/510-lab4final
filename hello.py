@@ -1,9 +1,9 @@
 import schedule
 import time
-from data import fetch_and_store_weather_data  # 确保这个函数在这个文件里或者正确地从其他地方导入
+from data import fetch_and_store_weather_data  
 
-api_key = "d1bdfd06881bbff02296606bc8a6ce9b"  # 你的API密钥
-cities = [("London", "UK"), ("Paris", "France"), ("Berlin", "Germany")]  # 举例，你可以根据需要更新
+api_key = "d1bdfd06881bbff02296606bc8a6ce9b"  
+cities = [("London", "UK"), ("Paris", "France"), ("Berlin", "Germany")]  
 
 def scheduled_job():
     for city_name, country in cities:
@@ -11,7 +11,7 @@ def scheduled_job():
         print(f"Data fetched for {city_name}, {country}")
 
 schedule.every(30).minutes.do(scheduled_job)
-# 运行定时任务
+
 while True:
     schedule.run_pending()
     time.sleep(1)

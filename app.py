@@ -5,6 +5,7 @@ from datetime import datetime
 import time
 import requests
 import sqlite3
+from data import get_latest_weather_data, fetch_and_store_weather_data
 
 
 # List of time zones

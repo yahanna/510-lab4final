@@ -37,6 +37,14 @@ To run the Streamlit application, navigate to the directory containing `app.py` 
   ```
 streamlit run app.py
   ```
+## Customization
+You can customize the list of cities by modifying the cities variable in the script. Additionally, you can adjust the scheduling interval by changing the parameter in the 
+  ```
+schedule.every(30).minutes.do(scheduled_job) 
+  ```
+line to a different value or time unit (e.g., hours).
+
+Make sure to adjust any specific instructions or details to fit the actual implementation and setup of your project. This section aims to provide clear guidance on how the scheduled weather data collection works and how to run it, along with a brief explanation of its purpose and functionality.
 
 ## Usage
 
