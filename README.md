@@ -23,22 +23,20 @@ This project includes a Streamlit application that displays world clocks across 
 
 1. Clone the repository to your local machine.
 
-"""
+  ```
 git clone https://github.com/yahanna/510lab4final.git
-"""
+  ```
 2. Install the required Python packages.
-"""
+  ```
 pip install streamlit requests beautifulsoup4 geopy sqlite3
-"""
-
+  ```
 ### Running the Application
 
 To run the Streamlit application, navigate to the directory containing `app.py` and execute the following command:
 
-"""
+  ```
 streamlit run app.py
-"""
-
+  ```
 
 ## Usage
 
